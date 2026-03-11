@@ -17,7 +17,7 @@ public class Main
             System.out.println(pag);
         }
 
-        user1.autentificareUser("Ana_are_mere","anamere67@gmail.ro");
+        user1.autentificareUser("Ana_are_mere","anamere6769@gmail.ro");
         user1.setupProfil("Palas","desenul");
         // 1. Instantiate the Logged User (Object)
         LoggedUser currentUser = new LoggedUser("USR-123", "AlexExplorer", "alex@example.com");
