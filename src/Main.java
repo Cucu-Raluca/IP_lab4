@@ -6,7 +6,8 @@ import java.util.List;
 public class Main
 {
     public static void main(String[] args) {
-         UnloggedUser user1 = new UnloggedUser();
+        // 0. Test UnloggedUser class
+        UnloggedUser user1 = new UnloggedUser();
 
         user1.viwePagina();
         user1.appFunctionalitati();
@@ -32,8 +33,5 @@ public class Main
 
         // 4. Call the important method (Initiate Planning)
         currentUser.initiateGroupPlanning("Weekend Rooftop Jazz Concert", friendsToInvite);
-
-        // 5. Test UnloggedUser class
-       
     }
 }
