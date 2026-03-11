@@ -18,7 +18,7 @@ public class UnloggedUser {
         listEvenimente.add("Coffe1");
         listEvenimente.add("Palas");
 
-        System.out.println("Browsing events........");
+        System.out.println("Top events........");
         return listEvenimente;
     }
     public void appFunctionalitati(){
