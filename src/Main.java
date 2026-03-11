@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main()
-{
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import app.LoggedUser;
 
-    for (int i = 1; i <= 5; i++)
-    {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import java.util.List;
+
+public class Main
+{
+    public static void main(String[] args) {
+        // 1. Instantiate the Logged User (Object)
+        LoggedUser currentUser = new LoggedUser("USR-123", "AlexExplorer", "alex@example.com");
+
+        // 2. Setup user state
+        currentUser.addFriend("Maria_Travels");
+        currentUser.addFriend("JohnDo");
+        currentUser.setCalendarSynced(true);
+
+        // 3. Define friends to invite
+        List<String> friendsToInvite = List.of("Maria_Travels", "JohnDo");
+
+        // 4. Call the important method (Initiate Planning)
+        currentUser.initiateGroupPlanning("Weekend Rooftop Jazz Concert", friendsToInvite);
     }
 }
